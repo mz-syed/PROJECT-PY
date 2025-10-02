@@ -107,7 +107,7 @@ def generate_report(machines):
 
 4.  It prints the machine name followed by the list of users.
 
-Finally, we have created all the nesseccary functions and class.
+Finally, i have created all the nesseccary functions and class.
 Now lets put it all together and see if the code works.
 """
 
@@ -123,7 +123,7 @@ def current_users(events):
     if event.type == "login" or event.type == "LOGIN":
       machines[event.machine].add(event.user)
     elif event.type == "logout" or event.type == "LOGOUT":
-      machines[event.machine].discard(event.user) # Use discard to avoid KeyError
+      machines[event.machine].discard(event.user) # Using discard to avoid KeyError
   return machines
 
 def generate_report(machines):
@@ -148,7 +148,7 @@ events = [
   Event('2020-01-23 11:24:35', 'login', 'mailserver.local', 'chris'),
 ]
 
-# We have created a list of events above as the instance of 'Event' class.
+# I have created a list of events above as the instance of 'Event' class.
 # Now lets find how many users are logged into the respective machine at the moment.
 
 users = current_users(events)
