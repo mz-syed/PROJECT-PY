@@ -1,4 +1,5 @@
-# The program will prompt for a location, contact a web service and retrieve JSON for the web service and parse that data, and retrieve the first plus_code from the JSON
+# The program will prompt for a location, contact a web service and retrieve JSON for the web service
+# and parse that data, and retrieve the first plus_code from the JSON
 
 import urllib.request, urllib.parse, urllib.error
 import json, ssl
@@ -47,6 +48,7 @@ while True:
     location = info['features'][0]['properties']['formatted']
     print('\nPlus Code:', plus_code)
     print(location)
+
 
 
 
